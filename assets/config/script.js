@@ -179,6 +179,7 @@ function initFormHandling() {
     const email = this.querySelector('#email').value;
     const subject = this.querySelector('#subject').value;
     const message = this.querySelector('#message').value;
+    const timestamp = new Date().toLocaleString();
 
     emailjs.send('service_qjnb9wc', 'template_mx9dpdq', {
       from_name: name,
