@@ -184,7 +184,8 @@ function initFormHandling() {
       from_name: name,
       from_email: email,
       subject: subject,
-      message: message
+      message: message,
+      time: timestamp
     })
     .then(() => {
       button.innerHTML = '<i class="fas fa-check me-2"></i>Message Sent!';
